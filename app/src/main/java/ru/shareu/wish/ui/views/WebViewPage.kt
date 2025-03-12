@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.viewinterop.AndroidView
 import ru.shareu.wish.ui.theme.WishTheme
 
+
 @SuppressLint("SetJavaScriptEnabled")
 @Composable
 fun WebViewPage(url: String, modifier: Modifier = Modifier) {
@@ -20,9 +21,12 @@ fun WebViewPage(url: String, modifier: Modifier = Modifier) {
 
     val webView = remember {
         WebView(context).apply {
-            webViewClient = WebViewClient()
+            settings.builtInZoomControls = true
             settings.javaScriptEnabled = true
-            settings.cacheMode = WebSettings.LOAD_NO_CACHE
+            settings.domStorageEnabled = true
+            settings.setGeolocationEnabled(true)
+            settings.cacheMode = WebSettings.LOAD_DEFAULT
+            webViewClient = WebViewClient()
         }
     }
 
