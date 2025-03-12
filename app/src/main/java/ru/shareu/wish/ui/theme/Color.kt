@@ -1,4 +1,4 @@
-package ru.shareu.Wish.ui.theme
+package ru.shareu.wish.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

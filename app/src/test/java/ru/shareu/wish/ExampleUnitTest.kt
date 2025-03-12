@@ -1,4 +1,4 @@
-package ru.shareu.Wish
+package ru.shareu.wish
 
 import org.junit.Test
 

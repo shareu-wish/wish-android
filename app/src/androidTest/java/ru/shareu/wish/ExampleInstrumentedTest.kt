@@ -1,4 +1,4 @@
-package ru.shareu.Wish
+package ru.shareu.wish
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
