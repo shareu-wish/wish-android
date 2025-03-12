@@ -1,4 +1,4 @@
-package ru.shareu.wish.ui.views
+package ru.shareu.wish.ui.screens
 
 import android.annotation.SuppressLint
 import android.webkit.WebSettings
@@ -16,7 +16,7 @@ import ru.shareu.wish.ui.theme.WishTheme
 
 @SuppressLint("SetJavaScriptEnabled")
 @Composable
-fun WebViewPage(url: String, modifier: Modifier = Modifier) {
+fun WebViewScreen(url: String, modifier: Modifier = Modifier) {
     val context = LocalContext.current
 
     val webView = remember {
@@ -40,8 +40,8 @@ fun WebViewPage(url: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun WebViewPagePreview() {
+fun WebViewPreview() {
     WishTheme {
-        WebViewPage("https://developer.android.com/studio")
+        WebViewScreen("https://developer.android.com/studio")
     }
 }
